@@ -1,0 +1,39 @@
+Host digiasa.git.backlog.jp
+  HostName digiasa.git.backlog.jp
+  User git
+  IdentityFile ~/.ssh/backlog
+
+Host gam-api
+  HostName 54.249.163.66
+  User ec2-user
+  IdentityFile ~/.ssh/gam-api.pem
+
+Host kakuzuke-test
+  HostName 57.182.199.232
+  User ec2-user
+  IdentityFile ~/.ssh/Kakuzuke-TEST.pem
+
+Host housing-web-stg
+  HostName 52.192.245.189
+  User abcadmins
+  IdentityFile ~/.ssh/abc-housing-staging.pem
+
+Host housing-web-prod
+  HostName 210.231.178.200
+  User abcadmins
+  IdentityFile ~/.ssh/id_rsa_housing_abcadmins.pem
+
+Host chef1-stg
+  HostName 18.179.126.233
+  User ec2-user
+  IdentityFile ~/.ssh/chef1gp.pem
+
+Host uchitsuku-admin-prod
+  HostName 54.64.21.161
+  User ec2-user
+  IdentityFile ~/.ssh/uchitsuku_production_20240210.pem
+
+Host uchitsuku-service-prod
+  HostName 13.230.72.24
+  User ec2-user
+  IdentityFile ~/.ssh/uchitsuku_production_20240210.pem
