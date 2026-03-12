@@ -1,0 +1,8 @@
+Host *
+  GSSAPIAuthentication no
+
+Include ~/code/dotfiles/ssh/conf.d/*
+
+# HTTP_PROXY という名前の変数が定義されているかチェック
+Match exec "env | grep -q '^HTTP_PROXY='"
+  ProxyCommand sh -c "nc -X connect -x $(echo $HTTP_PROXY | sed 's|^http://||;s|/||g') %h %p"

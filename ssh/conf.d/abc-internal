@@ -1,0 +1,141 @@
+# GitLab
+Host 10.190.250.100
+  Hostname 10.190.250.100
+  IdentityFile ~/.ssh/gitlab
+  User git
+  ProxyCommand none
+
+# Portal
+Host portal1
+  Hostname 10.190.250.101
+  User root
+  ProxyCommand none
+
+Host portal2
+  Hostname 10.190.250.102
+  User root
+  ProxyCommand none
+
+# Perro
+Host perro1
+  Hostname 10.191.18.50
+  User wwwabc
+  ProxyCommand none
+
+Host perro2
+  Hostname 10.191.18.99
+  User ec2-user
+  IdentityFile ~/.ssh/hensei2.pem
+  ProxyCommand none
+
+# review
+Host review
+  Hostname 10.191.18.187
+  User ec2-user
+  IdentityFile ~/.ssh/review.pem
+  ProxyCommand none
+
+# cipher
+Host cipher-primary
+  Hostname 10.191.64.7
+  User tatsuto_a_iijima
+  IdentityFile ~/.ssh/cipher-2nd-g1_dsa
+  ProxyCommand none
+
+Host cipher-secondary
+  Hostname 10.191.18.164
+  User ec2-user
+  IdentityFile ~/.ssh/cipher-2nd-a1.pem
+  ProxyCommand none
+
+# 内部asahi
+Host naibu-asahi
+  Hostname 10.191.18.21
+  User wwwabc
+  ProxyCommand none
+
+# 内部cipher
+Host naibu-cipher
+  Hostname 10.191.18.107
+  User wwwabc
+  ProxyCommand none
+
+# tdata
+Host tdata3
+  Hostname 10.191.18.176
+  User ec2-user
+  IdentityFile ~/.ssh/tdata.pem
+  ProxyCommand none
+
+Host tdata4
+  Hostname 10.191.18.227
+  User ec2-user
+  IdentityFile ~/.ssh/tdata.pem
+  ProxyCommand none
+
+# Zabbix
+Host zabbix2022
+  Hostname 10.190.102.191
+  User root
+  ProxyCommand none
+
+# OAモニター
+Host oamoni-tc1
+  HostName 10.190.118.101
+  User abc
+  ProxyCommand none
+
+Host oamoni-tc2
+  HostName 10.190.118.103
+  User abc
+  ProxyCommand none
+
+Host oamoni-tc3
+  HostName 10.190.118.105
+  User abc
+  ProxyCommand none
+
+Host oamoni-ntc1
+  HostName 10.190.118.102
+  User abc
+  ProxyCommand none
+
+Host oamoni-ntc2
+  HostName 10.190.118.104
+  User abc
+  ProxyCommand none
+
+Host oamoni-ntc3
+  HostName 10.190.118.106
+  User abc
+  ProxyCommand none
+
+# SW踏み台サーバー
+Host fumidai
+  Hostname 10.190.102.249
+  User iijima
+  IdentityFile ~/.ssh/fumidai
+  ProxyCommand none
+
+Host fumidai2
+  Hostname 10.190.102.250
+  User rdadmin
+  IdentityFile ~/.ssh/fumidai2-rdadmin-rsa
+  ProxyCommand none
+
+# Sync
+Host sync1
+  Hostname 10.190.201.250
+  User wwwabc
+  ProxyCommand none
+
+Host sync2
+  Hostname 10.190.201.251
+  User wwwabc
+  ProxyCommand none
+
+# MX4
+Host mx4
+  Hostname 10.190.200.34
+  User root
+  ProxyCommand none

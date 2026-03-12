@@ -1,0 +1,15 @@
+# ABC ID
+Host abcid-prod1
+  Hostname 57.180.97.66
+  User ec2-user
+  IdentityFile ~/.ssh/abc-id-prod.new.pem
+
+Host abcid-prod2
+  Hostname 52.192.51.171
+  User ec2-user
+  IdentityFile ~/.ssh/abc-id-prod.new.pem
+
+Host abcid-stg1
+  Hostname 57.180.183.105
+  User ec2-user
+  IdentityFile ~/.ssh/abc-id-stg.pem
