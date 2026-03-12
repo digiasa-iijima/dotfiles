@@ -1,6 +1,6 @@
 Host digiasa.git.backlog.jp
   HostName digiasa.git.backlog.jp
-  User git
+  User digiasa
   IdentityFile ~/.ssh/backlog
 
 Host gam-api
