@@ -37,3 +37,13 @@ Host uchitsuku-service-prod
   HostName 13.230.72.24
   User ec2-user
   IdentityFile ~/.ssh/uchitsuku_production_20240210.pem
+
+Host onnela-admin-dev
+  HostName 18.178.168.10
+  User dev
+  IdentityFile ~/.ssh/onnela-admin-common
+
+Host onnela-admin-prod
+  HostName 13.230.213.119
+  User dev
+  IdentityFile ~/.ssh/onnela-admin-common
